@@ -1,0 +1,13 @@
+# Node
+node_modules
+
+# Code Coverage
+.nyc_output
+coverage
+
+# Eslint cache
+.eslintcache
+
+# Other
+backup
+logs

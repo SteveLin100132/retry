@@ -1,0 +1,7 @@
+node_modules/
+lib/
+examples/
+.nyc_output/
+coverage/
+**/*.d.ts
+test/
