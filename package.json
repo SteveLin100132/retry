@@ -1,5 +1,5 @@
 {
-  "name": "@wistroni40/retry",
+  "name": "@wistroni40-retry",
   "version": "0.0.1",
   "description": "Retry when failed",
   "repository": {
