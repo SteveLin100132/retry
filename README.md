@@ -1,9 +1,9 @@
-# @wistroni40/retry
+# wistroni40-retry
 
 # Install
 
 ```
-npm i @wistroni40/retry --save
+npm i wistroni40-retry --save
 ```
 
 # Table of Contents
