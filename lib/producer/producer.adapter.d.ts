@@ -40,5 +40,5 @@ export declare abstract class ProducerAdapter<T> implements Producer {
      * @param payload  要拋送的數據
      * @param callback 拋送後的回乎函數
      */
-    publish(payload: any): void;
+    publish(payload: any, callback?: (error: any, result: any) => void): void;
 }
