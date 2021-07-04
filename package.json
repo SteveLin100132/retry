@@ -1,7 +1,9 @@
 {
   "name": "wistroni40-retry",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Retry when failed",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SteveLin100132/-wistroni40-retry.git"

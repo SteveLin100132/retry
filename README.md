@@ -86,6 +86,7 @@ options | RetryOption | Optional | [Example](#RetryOptions) | 重拋配置，項
 Parameter | Type | Required | Default | Description
 |:-----|:-----:|:-----:|:-----:|:-----|
 payload | any | Required | ```undefined``` | 要送出的資料
+callback | (error: any, result: any) => void | Required | ```undefined``` | 送出資料後的回乎函
 
 #### ***send***
 

@@ -40,7 +40,7 @@ export abstract class ProducerAdapter<T> implements Producer {
    */
   public abstract send(
     payload: any,
-    callback: (error: any, result: any) => void
+    callback: (error: any, result: any) => void,
   ): void;
 
   /**
@@ -50,8 +50,11 @@ export abstract class ProducerAdapter<T> implements Producer {
    * @param payload  要拋送的數據
    * @param callback 拋送後的回乎函數
    */
-  public publish(payload: any): void {
-    this.send(payload, (error) => {
+  public publish(payload: any, callback?: (error: any, result: any) => void): void {
+    this.send(payload, (error, res) => {
+      if (callback) {
+        callback(error, res);
+      }
       if (error) {
         this.retry.retry(payload);
       }
